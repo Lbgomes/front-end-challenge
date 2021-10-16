@@ -150,7 +150,63 @@
     display: flex;
     flex-direction: column;
   }
+
+  /* ====================================== Products ================================ */
+
+  .products {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px
+  }
+
+  .wrapper.special {
+    margin-top: 60px;
+  }
+
+  .product {
+      margin-bottom:  10px;      
+      display: flex;
+      align-items: center;
+  }
+
+  .product-image {
+    border: 1px solid #707070;
+    color: #888888;
+}
+
+  .product-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
   
+  .product-description {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .product-oldPrice,
+  .product-installments {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  
+  .product-button {
+    width: 100%;
+  }
+
+  .center-button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
   /* ====================================== Share News ================================ */
   
   .wrapper {
@@ -177,9 +233,22 @@
     padding: 0px 10px;
     text-align: center;
     display: inline;
-    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+    font-size: 18px;
   }
-  
+
+  .wrapper.spacing {
+      margin-top: 100px;
+  }
+
+  .share-news-txt-1 {
+    padding: 80px 0 30px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #888888;
+  }
   .share-news-txt-2 {
     padding: 80px 0 30px 0;
     text-align: center;
@@ -244,6 +313,15 @@
     .header-txt-3 {
       width: 100%;
     }
+    .products {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px
+    }
+    .product-image {
+        border: 1px solid #707070;
+        padding: 5px 44px;
+        color: #888888;
+    }
     footer {
       height: 180px;
     }
@@ -268,7 +346,9 @@
     .form-input {
       width: 385px;
     }
-  
+    .products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .second-form {
       flex-direction: row;
     }
