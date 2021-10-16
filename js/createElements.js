@@ -14,7 +14,7 @@ export default function createCards(
   
     card.innerHTML = `
         <img class="product-image" src="http:${image}" alt="Product image">
-            <div class="card-body">
+            <div class="product-items">
                 <h1 class="product-title">${name}</h1>
                 <p class="product-description">${description}</p>
                 <p class="product-oldPrice">De: ${oldPrice}</p>
