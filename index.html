@@ -8,10 +8,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/logo_linx.jpeg" type="image/x-icon">
+
+
     <title>Project Linxs</title>
 </head>
 
 <body>
+
+	</script>
     <header>
         <div class="header">
             <div class="header-texts">
@@ -46,25 +50,25 @@
                     ante suscipit libero, at mattis augue est vel metus.</p>
             </div>
             <div>
-                <form class="form" >
+                <form class="form" id="form" onsubmit="alerta()">
                     <label class="form-label" for="name">Seu nome:</label>
                     <input class="form-input" placeholder="José da Silva" type="text"  required name="name" id="name">
                     <label class="form-label" for="email">E-mail:</label>
                     <input class="form-input" placeholder="email@email.com" type="email" required name="email" id="email">
                     <label class="form-label" for="CPF">CPF:</label>
                     <input class="form-input" id="CPF" type="text" inputmode="numeric" placeholder="123.123.123-12" maxlength="14">
-                    <div class="form-radio-buttons">
+                    <div>
                         <input type="radio" name="gender" required id="male">
-                        <label for="male" class="male">Masculino</label>
+                        <label for="male" class="gender male">Masculino</label>
                         <input type="radio" name="gender" required id="female">
-                        <label for="female">Feminino</label>
+                        <label for="female" class="gender">Feminino</label>
                     </div>
-                    <button class="form-submit" type="submit">Enviar</button>
+                    <button class="form-submit" onclick={Submit()} type="submit">Enviar</button>
                 </form>
             </div>
         </div>
         </div>
-        <section class="products-container">
+        <section>
             <div class="wrapper special">
                 <div class="line"></div>
                 <div class="textbox">
@@ -74,10 +78,10 @@
             <div class="products">
             </div>
             <div class="center-button">
-                <button class="more-products form-submit second-form-submit" type="submit">Ainda mais produtos aqui!</button>
+                <button id="more-products" class="form-submit second-form-submit" type="submit">Ainda mais produtos aqui!</button>
             </div>
         </section>
-        <div class="share-news">
+        <div>
             <div class="wrapper spacing">
                 <div class="line"></div>
                 <div class="textbox">
@@ -110,7 +114,16 @@
     </footer>
     <script src="/js/index.js"></script>
     <script type="module" src="./js/loadElements.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript">
+      function alerta(){
+          Swal.fire(
+            'Bom trabalho!',
+            'Formulário enviado com sucesso',
+            'success'
+            )
+        }
+  </script>
 </body>
 
 </html>

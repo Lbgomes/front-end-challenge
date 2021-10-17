@@ -40,7 +40,7 @@ export default async function loadProducts(url, container) {
 
 loadProducts(apiURL, container);
 
-const buttonShowMore = document.querySelector(".more-products");
+const buttonShowMore = document.querySelector("#more-products");
 
 buttonShowMore.addEventListener("click", async () => {
   await loadProducts(apiURL, container);

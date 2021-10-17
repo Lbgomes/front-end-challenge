@@ -117,14 +117,11 @@
   input::placeholder {
     opacity: 0.6;
   }
-  .form-radio-buttons {
-    margin-top: 20px;
-  }
   
-  .radio-button {
-    display: flex;
+  .gender {
+    font-size: 12px;
   }
-  
+
   .male {
     margin-right: 4rem;
   }
