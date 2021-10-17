@@ -1,5 +1,4 @@
 // creating a function to add a mask to input
-function inputMask() {
   
   document.getElementById("CPF").addEventListener("input", function() {
     var i = document.getElementById("CPF").value.length;
@@ -17,7 +16,6 @@ function inputMask() {
       document.getElementById("CPF").value = document.getElementById("CPF").value + "-";
     }
   });
-}
 
   // creating a function to not let the form reload the page
     var form = document.getElementById("form") 
